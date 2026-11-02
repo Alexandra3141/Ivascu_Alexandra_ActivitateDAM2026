@@ -2,4 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#1E88E5</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#FF6F00</color>
+    <color name="accent_light">#FFE082</color>
+    <color name="bg_light">#F5F7FA</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="success">#2E7D32</color>
+    <color name="warning">#F57C00</color>
+    <color name="danger">#C62828</color>
+    <color name="ai_gradient_start">#6A11CB</color>
+    <color name="ai_gradient_end">#2575FC</color>
 </resources>

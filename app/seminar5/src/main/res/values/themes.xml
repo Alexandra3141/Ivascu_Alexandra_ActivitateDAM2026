@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Ivascu_Alexandra_ActivitateDAM2026" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.Ivascu_Alexandra_ActivitateDAM2026" parent="Base.Theme.Ivascu_Alexandra_ActivitateDAM2026" />
+</resources>

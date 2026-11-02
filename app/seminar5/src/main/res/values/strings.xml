@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">seminar 5</string>
+
+    <string name="title_main_lifecycle">Laborator 2 - 3: Ciclul de Viață</string>
+    <string name="title_second_activity">Laborator DAM - Meniu Principal</string>
+    <string name="title_third_activity">Laborator 2 - 3: Activitatea 3</string>
+
+    <string name="btn_open_activity3">Deschide Activitatea 3 (Intent + Bundle)</string>
+    <string name="btn_send_sum_back">Trimite Mesaj și Sumă Înapoi</string>
+    <string name="btn_open_lifecycle">Vezi Activitatea 1 (Ciclul de Viață &amp; Logcat)</string>
+
+    <string name="title_add_imprimanta">Laborator 4: Adăugare Imprimantă</string>
+    <string name="title_add_imprimanta_ai">Laborator 4: Adăugare Imprimantă (AI Design)</string>
+    <string name="btn_add_imprimanta_classic">Adaugă Imprimantă (Formular Clasic)</string>
+    <string name="btn_add_imprimanta_ai">Adaugă Imprimantă (Design AI)</string>
+    <string name="btn_save_imprimanta">Salvează Imprimantă</string>
+
+    <string name="hint_producator">Producător / Marcă (ex: HP, Canon, Epson)</string>
+    <string name="hint_pret">Preț (RON)</string>
+    <string name="label_este_color">Imprimantă Color</string>
+    <string name="label_tip_conexiune">Tip Conexiune:</string>
+    <string name="radio_wifi">Wi-Fi</string>
+    <string name="radio_usb">USB</string>
+    <string name="radio_bluetooth">Bluetooth</string>
+    <string name="label_tehnologie">Tehnologie de tipărire:</string>
+    <string name="label_rating">Evaluare / Rating:</string>
+    <string name="switch_garantie">Garanție extinsă inclusă</string>
+
+    <string name="title_lista_imprimante">Laborator 5: Listă Imprimante (ListView)</string>
+    <string name="btn_view_listview">Afișează Listă Imprimante (ListView)</string>
+
+    <string-array name="tehnologii_imprimanta">
+        <item>Laser</item>
+        <item>Inkjet</item>
+        <item>Multifuncțională</item>
+        <item>Termică</item>
+        <item>3D</item>
+    </string-array>
+</resources>

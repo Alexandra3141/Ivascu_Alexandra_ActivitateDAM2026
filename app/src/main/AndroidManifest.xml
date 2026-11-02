@@ -11,16 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ivascu_Alexandra_ActivitateDAM2026">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".SecondActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:label="DAM - Panou Principal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Laborator 2-3: Ciclul de Viață" />
+
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="false"
+            android:label="Laborator 2-3: Activitatea 3" />
+
+        <activity
+            android:name=".AddImprimantaActivity"
+            android:exported="false"
+            android:label="Laborator 4: Adăugare Imprimantă" />
+
+        <activity
+            android:name=".AddImprimantaAiActivity"
+            android:exported="false"
+            android:label="Laborator 4: Adăugare Imprimantă (AI Design)" />
+
+        <activity
+            android:name=".ListaImprimanteActivity"
+            android:exported="false"
+            android:label="Laborator 5: Listă Imprimante (ListView)" />
+
     </application>
 
 </manifest>
