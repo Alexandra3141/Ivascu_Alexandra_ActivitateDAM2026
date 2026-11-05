@@ -12,6 +12,7 @@ import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
@@ -39,6 +40,26 @@ public class AddImprimantaActivity extends AppCompatActivity {
 
         initializareControale();
         populareSpinner();
+
+        Intent it = getIntent();
+        if(it.hasExtra("imprimanta")){
+            Imprimanta imprimanta = it.getParcelableExtra("imprimanta");
+            EditText producatorET = findViewById(R.id.etProducator);
+            EditText pretET = findViewById(R.id.etPret);
+            RadioGroup tipConexiuneRG = findViewById(R.id.rgConexiune);
+            RadioButton ratingRB = findViewById(R.id.rbRating);
+            SwitchCompat areGarantieCB = findViewById(R.id.swGarantie);
+
+            producatorET.setText(imprimanta.getProducator());
+            pretET.setText((int) imprimanta.getPret());
+            if ("USB".equalsIgnoreCase(imprimanta.getTipConexiune())) {
+                rgConexiune.check(R.id.rbUsb);
+            } else if ("Bluetooth".equalsIgnoreCase(imprimanta.getTipConexiune())) {
+                rgConexiune.check(R.id.rbBluetooth);
+            } else {
+                rgConexiune.check(R.id.rbWifi);
+            }
+        }
 
         btnSalveazaImprimanta.setOnClickListener(v -> salveazaSiTrimite());
     }
