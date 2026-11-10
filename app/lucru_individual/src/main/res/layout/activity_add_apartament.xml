@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddApartamentActivity">
+
+    <EditText
+        android:id="@+id/adresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Adresa"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="155dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/suprafata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Suprafata"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="226dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/pret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Pret"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="293dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/salvare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salveaza"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="542dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/decomandat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decomandat"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="464dp"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/zona"
+        android:layout_width="212dp"
+        android:layout_height="75dp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="361dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

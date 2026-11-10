@@ -11,9 +11,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app/exercitii_pentru_test" />
+            <option value="$PROJECT_DIR$/app/exercitiu" />
+            <option value="$PROJECT_DIR$/app/lucru_individual" />
             <option value="$PROJECT_DIR$/app/seminar1" />
             <option value="$PROJECT_DIR$/app/seminar5" />
-            <option value="$PROJECT_DIR$/app/seminar6" />
           </set>
         </option>
       </GradleProjectSettings>

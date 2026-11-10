@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -15,5 +16,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/adaugaApartament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adauga Apartament"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="227dp"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:layout_width="414dp"
+        android:layout_height="349dp"
+        android:id="@+id/lvApartamente"
+        tools:layout_editor_absoluteY="382dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marca automobil" />
+
+    <EditText
+        android:id="@+id/etAnFabricatie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="An fabricatie"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etPret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pret (EUR)"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spCombustibil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbGarantie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Este in garantie" />
+
+    <Button
+        android:id="@+id/btnSalvare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salvare" />
+
+</LinearLayout>
