@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ex</string>
+    <string name="btn_adauga_asigurare">Adauga Asigurare</string>
+    <string name="btn_afiseaza_asigurari">Afiseaza Asigurari</string>
+    <string name="hint_id_asigurare">ID Asigurare</string>
+    <string name="hint_titular">Nume Titular</string>
+    <string name="hint_cost_polita">Cost Polita (RON)</string>
+    <string name="label_este_activata">Polita este activata</string>
+    <string name="btn_salvare">Salvare Inregistrare</string>
+    <string name="label_activ">Activ</string>
+    <string name="label_inactiv">Inactiv</string>
+</resources>

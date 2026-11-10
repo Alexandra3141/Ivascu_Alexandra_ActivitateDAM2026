@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">lucru_individual</string>
+    <string name="adauga_apartament">Adauga Apartament</string>
+    <string name="afiseaza_apartamente">Afiseaza apartamente</string>
 </resources>

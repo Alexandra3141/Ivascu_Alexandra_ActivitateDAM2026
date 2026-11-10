@@ -10,7 +10,7 @@
         android:id="@+id/btnAdauga"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adauga Automobil" />
+        android:text="@string/adauga_automobil" />
 
     <ListView
         android:id="@+id/lvAutomobile"

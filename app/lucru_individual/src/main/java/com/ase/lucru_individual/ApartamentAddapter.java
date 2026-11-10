@@ -49,8 +49,27 @@ public class ApartamentAddapter extends BaseAdapter {
         ViewHolder viewHolder;
 
         if(convertView == null){
-            LayoutInflater inflater = LayoutInflater.from(context);
+            convertView = LayoutInflater.from(context).inflate(resource, parent ,false);
 
+            viewHolder = new ViewHolder();
+            viewHolder.tvAdresa = convertView.findViewById(R.id.tvAdresa);
+            viewHolder.tvPret = convertView.findViewById(R.id.tvPret);
+            viewHolder.tvSuprafata = convertView.findViewById(R.id.tvSuprafata);
+            viewHolder.tvZona = convertView.findViewById(R.id.tvZona);
+
+            convertView.setTag(viewHolder);
+        }
+        else{
+            viewHolder = (ViewHolder) convertView.getTag();
+        }
+
+        Apartament apartament = (Apartament) getItem(position);
+
+        if(apartament != null){
+            viewHolder.tvAdresa.setText(apartament.getAdresa());
+            viewHolder.tvZona.setText(apartament.getZona());
+            viewHolder.tvSuprafata.setText((int) apartament.getSuprafata());
+            viewHolder.tvPret.setText(Double.valueOf(apartament.getPret()).toString());
         }
 
         return convertView;

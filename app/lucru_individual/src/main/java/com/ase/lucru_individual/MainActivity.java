@@ -1,5 +1,6 @@
 package com.ase.lucru_individual;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,8 +19,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ArrayList<Apartament> apartamente = new ArrayList<>();
-    private ActivityResultLauncher<Intent> activityResultLauncher;
+    private ActivityResultLauncher activityResultLauncher;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,24 +37,32 @@ public class MainActivity extends AppCompatActivity {
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
                     if(result.getResultCode() == RESULT_OK && result.getData() != null){
-                        Apartament apartamentPrimit;
+                        Apartament apartament;
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                            apartamentPrimit = result.getData().getParcelableExtra("apartament", Apartament.class);
+                            apartament = result.getData().getParcelableExtra("apartament", Apartament.class);
                         }
                         else{
-                            apartamentPrimit = result.getData().getParcelableExtra("apartament");
+                            apartament = result.getData().getParcelableExtra("apartament");
                         }
-                        if(apartamentPrimit != null){
-                            apartamente.add(apartamentPrimit);
+                        if(apartament != null){
+                            apartamente.add(apartament);
                         }
                     }
                 }
         );
 
-        Button btnAdaugaApartament = findViewById(R.id.adaugaApartament);
-        btnAdaugaApartament.setOnClickListener(v -> {
+        Button btnAdauga = findViewById(R.id.adaugaApartament);
+        Button btnAfiseaza = findViewById(R.id.afisare);
+
+        btnAdauga.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AddApartamentActivity.class);
             activityResultLauncher.launch(intent);
+        });
+
+        btnAfiseaza.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AfisareApartamente.class);
+            intent.putParcelableArrayListExtra("apartament", apartamente);
+            startActivity(intent);
         });
     }
 }
